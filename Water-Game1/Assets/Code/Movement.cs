@@ -25,6 +25,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    private void FixedUpdate()
+    {
         if (Input.GetKeyDown(jumpKey))
         {
             if (Groundcheck())
@@ -40,11 +45,6 @@ public class Movement : MonoBehaviour
         {
 
         }
-    }
-
-    private void FixedUpdate()
-    {
-        
     }
 
 
